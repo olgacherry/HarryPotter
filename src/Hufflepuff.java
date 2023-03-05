@@ -21,6 +21,10 @@ public class Hufflepuff extends Hogwarts {
     public int getLoyalty() {
         return loyalty;
     }
-
+   int calculateDiligenceHonestyLoyalty(){
+        return diligence+honesty+loyalty;
+   }
+    public static void compareTwoHufflepuffStudent() {
+    }
 }
 

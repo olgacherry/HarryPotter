@@ -33,5 +33,9 @@ public class Slytherin extends Hogwarts {
     public int getLustForPower(){
     return lustForPower;
     }
-
+    int calculateCunningResolutenessAmbitionResourcefulnessLustForPower(){
+        return cunning+resoluteness+ambition+resourcefulness+lustForPower;
+    }
+    public static void compareTwoSlytherinStudent() {
+    }
 }

@@ -5,14 +5,13 @@
         private int bravery;
 
 
-
-
         public Gryffindor(String facultyName, String name, String surname, int witchcraft, int transgression, int nobility, int honor, int bravery) {
             super(facultyName, name, surname, witchcraft, transgression);
             this.nobility = nobility;
             this.honor = honor;
             this.bravery = bravery;
         }
+
 
         public int getNobility() {
             return nobility;
@@ -26,6 +25,11 @@
             return bravery;
         }
 
+        int calculateNobilityHonorBravery() {
+            return nobility + honor + bravery;
+        }
 
+        public static void compareTwoGryffindorStudent() {
+        }
 
     }

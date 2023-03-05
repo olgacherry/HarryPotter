@@ -27,4 +27,9 @@ public class Ravenclaw extends Hogwarts {
     public int getCreation() {
         return creation;
     }
+    int calculateMindWisdomWitCreation(){
+        return mind+wisdom+wit+creation;
+    }
+    public static void compareTwoRavenclawStudent() {
+    }
 }
