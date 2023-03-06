@@ -39,6 +39,13 @@
        return witchcraft + transgression;
     }
     public static void compareTwoHogwartsStudent() {
+        Hogwarts hogwarts1 = new Hogwarts("Gryffindor", "Harry", "Potter", 10, 9);
+        Hogwarts hogwarts2 = new Hogwarts("Slytherin", "Gregory", "Goyle", 7, 4);
+        if (hogwarts1.calculateWitchcraftAndTransgetion() > hogwarts2.calculateWitchcraftAndTransgetion()) {
+            System.out.println("Harry Potter лучше, чем Gregory Goyle");
+        } else {
+            System.out.println("Gregory Goyle лучше, чем Harry Potter");
+        }
     }
 
 

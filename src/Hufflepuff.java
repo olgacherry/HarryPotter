@@ -25,6 +25,13 @@ public class Hufflepuff extends Hogwarts {
         return diligence+honesty+loyalty;
    }
     public static void compareTwoHufflepuffStudent() {
+        Hufflepuff hufflepuff1 = new Hufflepuff("Hufflepuff", "Zacharias", "Smith", 7, 9, 4, 7, 6);
+        Hufflepuff hufflepuff2 = new Hufflepuff("Hufflepuff", "Cedric", "Diggory", 5, 9, 7, 5, 8);
+        if(hufflepuff1.calculateDiligenceHonestyLoyalty()>hufflepuff2.calculateDiligenceHonestyLoyalty()){
+            System.out.println("Zacharias Smith лучший Пуффендуец, чем Cedric Diggory");
+        }else {
+            System.out.println("Cedric Diggory лучший Пуффендуец, чем Zacharias Smith");
+        }
     }
 }
 

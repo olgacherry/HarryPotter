@@ -31,5 +31,12 @@ public class Ravenclaw extends Hogwarts {
         return mind+wisdom+wit+creation;
     }
     public static void compareTwoRavenclawStudent() {
+        Ravenclaw ravenclaw1 = new Ravenclaw("Ravenclaw", "Cho", "Chang", 7, 4, 8, 9, 6, 7);
+        Ravenclaw ravenclaw2 = new Ravenclaw("Ravenclaw", "Marcus", "Belby", 5, 3, 7, 9, 6, 5);
+        if(ravenclaw1.calculateMindWisdomWitCreation()>ravenclaw2.calculateMindWisdomWitCreation()){
+            System.out.println("Cho Chang лучший Когтевранец, чем Marcus Belby");
+        }else{
+            System.out.println("Marcus Belby лучший Когтевранец, чем Cho Chang");
+        }
     }
 }

@@ -30,6 +30,13 @@
         }
 
         public static void compareTwoGryffindorStudent() {
+            Gryffindor gryffindor1 = new Gryffindor("Gryffindor", "Hermione", "Granger", 10, 10, 9, 9, 10);
+            Gryffindor gryffindor2 = new Gryffindor("Gryffindor", "Ron", "Weasley", 7, 6, 7, 9, 5);
+            if (gryffindor1.calculateNobilityHonorBravery() > gryffindor2.calculateNobilityHonorBravery()) {
+                System.out.println("Hermione Granger лучший Гриффиндорец, чем Ron Weasley");
+            } else {
+                System.out.println("Ron Weasley лучший Гриффиндорец, чем Hermione Granger");
+            }
         }
 
     }

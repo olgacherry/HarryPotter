@@ -37,5 +37,13 @@ public class Slytherin extends Hogwarts {
         return cunning+resoluteness+ambition+resourcefulness+lustForPower;
     }
     public static void compareTwoSlytherinStudent() {
+        Slytherin slytherin1 = new Slytherin("Slytherin", "Draco", "Malfoy", 6, 7, 6, 9, 8, 9, 9);
+        Slytherin slytherin2 = new Slytherin("Slytherin", "Graham", "Montague", 9, 6, 9, 7, 9, 7, 9);
+        if (slytherin1.calculateCunningResolutenessAmbitionResourcefulnessLustForPower() > slytherin2.calculateCunningResolutenessAmbitionResourcefulnessLustForPower()) {
+            System.out.println("Draco Malfoy лучший Слизеринец, чем Graham Montague");
+        } else {
+            System.out.println("Graham Montague лучший Слизеринец, чем Draco Malfoy");
+        }
+
     }
 }
